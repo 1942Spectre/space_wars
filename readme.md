@@ -2,7 +2,7 @@
 
 Our game, _Galactic Mayhem_ is a space shooter game that is inspired from the spaceship battles from Star Wars. The player's ship, Millenium Falcon, is travelling in open space where it continiously comes across different types of enemy ships that try to exterminate it, and also asteroids that are floating accross the space. Simply, both the different types of enemy ships and players ship has a number of hitpoints, and if the player runs out of hitpoints, game ends.
 
-![Example In Game](example_in_game.png "Example In Game")
+![Example In Game](example_ingame.png "Example In Game")
 
 ## Main Element Models
 
