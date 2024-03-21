@@ -39,3 +39,9 @@ For now, there are two possible routes for the games difficulty and scoring syst
 Highest 10 scores will be stored in a simple file or a sqlite database if its allowed in the project, so the competitive order of the arcade era will be an incentive for the players to play the game. If they get a high score, that will at least be in the top 10 of the table, player will be able to enter a name for that score.
 
 ![Example High Scores](example_high_scores.png "Example High Scores")
+
+## Contributors
+
+- Ahmet Hakan Afşin, 2021402303
+- Lütfi Furkan Şimşek, 2020402177
+- Eren Yılmaz, 2022402303
