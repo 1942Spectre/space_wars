@@ -311,7 +311,7 @@ class Game():
         self.projectile_sound = pygame.mixer.Sound("laser_blast_sound.wav")  # Load the sound effect
         
 
-        self.star_destroyer_spawn_proba = 1 
+        self.star_destroyer_spawn_proba = 0.05 
 
         self.num_asteroids = 0
         self.asteroid_spawn_proba = 0.002
