@@ -50,8 +50,9 @@ The scoreboard feature that saves the best 10 scores will fuel players' competit
 
 **UML Diagram:**
 
+<div style = "background-color: #f0f0f0; display: inline-block; padding:5px;>
 ![UML Diagram](files/UML%20Diagram.png "UML Diagram")
-
+</div>
 **Explanation\*\***:\*\*
 
 **Game:** This class handles the whole game loop, it updates all the sprites, checks collisions, adjust difficulty etc.
