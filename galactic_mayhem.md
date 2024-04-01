@@ -18,23 +18,17 @@
 
 Instructor: Ali Tamer Unal
 
-Table of Contents
+# Table of contents
 
-**Introduction and Description: “Galactic Mayhem”** **2**
+1. [Introduction](#introduction)
+2. [UML Diagram](#uml_diagram)
+   1. [Diagram](#uml_diagram_diagram)
+   2. [Explanation](#uml_diagram_explanation)
+3. [Use Case Diagram](#use_case_diagram)
+   1. [Diagram](#use_case_diagram_diagram)
+   2. [Explanation](#use_case_diagram_explanation)
 
-**UML Diagram** **4**
-
-Diagram 4
-
-Explanation 5
-
-**Use-Case Diagram** **7**
-
-Diagram 7
-
-Explanation 7
-
-**1.** **Introduction** **and** **Description\*\***: “Galactic Mayhem”\*\*
+## Introduction and Description: “Galactic Mayhem” <a name="introduction"></a>
 
 Step into the retro world of Galactic Mayhem, a classic space-shooter game with a nostalgic twist. Inspired by the arcade era and the enduring popularity of Star Wars, this indie gem offers a blast from the past while capturing the essence of timeless gameplay. In a gaming landscape where simplicity reigns supreme, Galactic Mayhem invites players to rediscover the joy of pixelated adventures and embark on an epic journey through the stars. Get ready to pilot your ship, dodge enemy fire, and experience the thrill of old-school gaming with Galactic Mayhem.
 
@@ -48,11 +42,13 @@ The different species of enemy ships, each with their own unique behaviors and a
 
 The scoreboard feature that saves the best 10 scores will fuel players' competitive spirit as they strive to claim a spot among the galaxy's elite pilots. Whether you're aiming to beat your own personal best or gunning for the top of the leaderboard, every playthrough becomes a chance to etch your name in gaming history. With each high score saved for posterity, Galactic Mayhem transforms into a battleground where skill and determination reign supreme. So buckle up, pilot – the stars await, and the leaderboard beckons!
 
-**UML Diagram:**
+## UML Diagram <a name="uml_diagram"></a>
+
+### Diagram <a name="uml_diagram_diagram"></a>
 
 ![UML Diagram](files/UML%20Diagram.png "UML Diagram")
 
-**Explanation\*\***:\*\*
+### Explanation <a name="uml_diagram_explanation"></a>
 
 **Game:** This class handles the whole game loop, it updates all the sprites, checks collisions, adjust difficulty etc.
 
@@ -88,10 +84,13 @@ The scoreboard feature that saves the best 10 scores will fuel players' competit
 
 **Factory\*\***:\*\* We decided to implement the Factory pattern here, this class handles the spawning process of all the objects with static methods, this way, we can handle all the spawning processes from a single place. Also, in some cases, for example while spawning enemies, we have a complicated process, we might create two different ships based on some logic, or might create multiple projectiles instead of a single one, from different parts of the ship, having this logic inside constructors would be confusing.
 
-CPU Player **Use\*\***\-Case Diagram:\*\* ![A black and white background with white ovals
-**Use-Case Diagram:**
+## Use-Case Diagram <a name="use_case_diagram"></a>
+
+### Diagram <a name="use_case_diagram_diagram"></a>
 
 ![Use-Case Diagram](files/Use-Case%20Diagram.png "Use-Case Diagram")
+
+### Explanation <a name="use_case_diagram_explanation"></a>
 
 **Explanation\*\***:\*\*
 
