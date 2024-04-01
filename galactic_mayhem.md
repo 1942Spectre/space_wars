@@ -124,24 +124,38 @@ The scoreboard feature that saves the best 10 scores will fuel players' competit
 
 ### Explanation <a name="use_case_diagram_explanation"></a>
 
-**Explanation\*\***:\*\*
+#### CPU:
 
-**CPU:**
+    Those processes occur independently and are automatically handled by the CPU.
 
-**Update Game Objects:** Every object controlled by the cpu has an update logic, enemy ships move, fire or change direction, projectiles move up or down, boosts move down. Cpu handles them through the update functions. Also, objects collide with each other, If this collision is between a ship and a projectile that has different owners (player or CPU), ship loses some hitpoints and projectile gets removed. If this collision is between ships, ships change their directions and get teleported to the each other’s side, so they won’t keep colliding.
+##### Update Game Objects:
 
-**Handle** **Spawns:** Based on the difficulty and some fixed rulesets, CPU spawns enemies. Those functions are handled in the Factory class.
+    Every object controlled by the cpu has an update logic, enemy ships move, fire or change direction, projectiles move up or down, boosts move down. Cpu handles them through the update functions. Also, objects collide with each other, If this collision is between a ship and a projectile that has different owners (player or CPU), ship loses some hitpoints and projectile gets removed. If this collision is between ships, ships change their directions and get teleported to the each other’s side, so they won’t keep colliding.
 
-**Update Difficulty:** Difficulty of the game increases logarithmically as the time and score increases**.**
+##### Handle Spawns:
 
-Those processes occur independently and are automatically handled by the CPU.
+    Based on the difficulty and some fixed rulesets, CPU spawns enemies. Those functions are handled in the Factory class.
 
-**Player:**
+##### Update Difficulty:
 
-**Start Game:** Starts a game
+    Difficulty of the game increases logarithmically as the time and score increases.
 
-**Move** **Left/Move Rigth:** Player’s ship moves lef tor right in order to Dodge enemy projectiles or position itself to fire at the horizontal pozition.
+#### Player:
 
-**Fire:** Player’s ship creates a projectile at the top middle of its rect. This projectile will be added to the sprite groups to be updated with all the other objects.
+    Those processes require user input.
 
-**Exit** **Game:** Exits from the game.
+##### Start Game:
+
+    Starts a game
+
+##### Move Left/Move Rigth:
+
+    Player’s ship moves lef tor right in order to Dodge enemy projectiles or position itself to fire at the horizontal pozition.
+
+##### Fire:
+
+    Player’s ship creates a projectile at the top middle of its rect. This projectile will be added to the sprite groups to be updated with all the other objects.
+
+##### Exit Game:
+
+    Exits from the game.
