@@ -50,8 +50,7 @@ The scoreboard feature that saves the best 10 scores will fuel players' competit
 
 **UML Diagram:**
 
-![A black screen with white text
-Description automatically generated](files/UML Diagram.png)
+![UML Diagram](files/UML%20Diagram.png "UML Diagram")
 
 **Explanation\*\***:\*\*
 
@@ -90,7 +89,9 @@ Description automatically generated](files/UML Diagram.png)
 **Factory\*\***:\*\* We decided to implement the Factory pattern here, this class handles the spawning process of all the objects with static methods, this way, we can handle all the spawning processes from a single place. Also, in some cases, for example while spawning enemies, we have a complicated process, we might create two different ships based on some logic, or might create multiple projectiles instead of a single one, from different parts of the ship, having this logic inside constructors would be confusing.
 
 CPU Player **Use\*\***\-Case Diagram:\*\* ![A black and white background with white ovals
-![Use Case Diagram](files/Use-Case Diagram.png)
+**Use-Case Diagram:**
+
+![Use-Case Diagram](files/Use-Case%20Diagram.png "Use-Case Diagram")
 
 **Explanation\*\***:\*\*
 
