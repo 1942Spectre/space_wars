@@ -1,24 +1,24 @@
-**Boğaziçi University**
+# Galactic Mayhem
 
-**Industrial Engineering Department**
+### Boğaziçi University
 
-**IE 201 - SPRING 202\*\***4\*\*
+### Industrial Engineering Department
 
-**Galactic** **Mayhem**
+### IE 201 - SPRING 2024
 
-**Analysis Report**
+### Project Analysis Report
 
-**Group** **1**
+### Group 1
 
-**Ahmet Hakan Afşin  2021402303**
+- Ahmet Hakan Afşin  2021402303
 
-**Lütfi Furkan Şimşek  2020402177**
+- Lütfi Furkan Şimşek  2020402177
 
-**Eren Yılmaz  2022402303**
+- Eren Yılmaz  2022402303
 
-Instructor: Ali Tamer Unal
+### Instructor: Ali Tamer Unal
 
-# Table of contents
+## Table of contents
 
 1. [Introduction](#introduction)
 2. [UML Diagram](#uml_diagram)
