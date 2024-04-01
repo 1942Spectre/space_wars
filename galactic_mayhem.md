@@ -50,39 +50,71 @@ The scoreboard feature that saves the best 10 scores will fuel players' competit
 
 ### Explanation <a name="uml_diagram_explanation"></a>
 
-**Game:** This class handles the whole game loop, it updates all the sprites, checks collisions, adjust difficulty etc.
+    Game: This class handles the whole game loop, it updates all the sprites, checks collisions, adjust difficulty etc.
 
-**Difficulty\*\***:\*\* To keep the Game class clean, this class handles the difficulty adjustments and contains the attributes and methods related with game difficulty.
+#### Difficulty:
 
-**Hud:** Hud is the part of the interface that player gets info, remaining hitpoints, score, etc.
+    To keep the Game class clean, this class handles the difficulty adjustments and contains the attributes and methods related with game difficulty.
 
-**Background:** This class handles the scrolling process of the background, we simply scroll over parts of a big image
+#### Hud:
 
-**Object:** This class is the base class of every object that is generated inside the game, it also inherits pygame.sprite.Sprite class, so some of the methods are handled by the pygame easily, In situations that we require something more than default pygame method, we simply override the method.
+    Hud is the part of the interface that player gets info, remaining hitpoints, score, etc.
 
-**Ship\*\***:\*\* This class is a child class of object class. Both player and enemy ships inherit this class, So we don’t write the same attributes or methods over and over, simply override if needed.
+#### Background:
 
-**EnemyShip\*\***:\*\* This class contains the general attributes and methods shared between enemy ships, for example, we handle the update and move methods of enemy ships in that class.
+    This class handles the scrolling process of the background, we simply scroll over parts of a big image
 
-**TieFighter\*\***:\*\* Default enemy class, they are small ships with a single gun and low attack rate (fire probability).
+#### Object:
 
-**StarDestroyer\*\***:\*\* A stronger enemy, that has a wide body (3 tiefighters), three guns, high attack rate and huge hitpoints.
+    This class is the base class of every object that is generated inside the game, it also inherits pygame.sprite.Sprite class, so some of the methods are handled by the pygame easily, In situations that we require something more than default pygame method, we simply override the method.
 
-**PlayerShip\*\***:\*\* This class simply represents the player’s ship. It also overrides the draw method because in a special case, when the player has an active shield, we need to call super.draw and also, draw the shield.
+#### Ship:
 
-**Projectile\*\***:\*\* This class is another child of the Object class, Represents the projectiles in game both created by player and enemy, simply having the owner in an attribute to be able to make decisions when that info is needed.
+    This class is a child class of object class. Both player and enemy ships inherit this class, So we don’t write the same attributes or methods over and over, simply override if needed.
 
-**Boost\*\***:\*\* This is another child of the Object class, we also may inherit from the projectile itself since it acts similarly, but Projectiles don’t have image and we want to keep it that way, at least for now. When the player collides with a boost, it gets consumed and removed.
+##### EnemyShip:
 
-**DamageBoost\*\***:\*\* When consumed, Damage of the player increases.
+    This class contains the general attributes and methods shared between enemy ships, for example, we handle the update and move methods of enemy ships in that class.
 
-**DoubleGuns\*\***:\*\* When consumed, player start firing two guns instead of one, after its first consumption, it will not be spawned again.
+###### TieFighter:
 
-**Shield\*\***:\*\* When consumed, player gains a shield that will block 5 enemy projectiles
+     Default enemy class, they are small ships with a single gun and low attack rate (fire probability).
 
-**HP_Boost\*\***:\*\* When consumed, player gains 50 hitpoints, maximum hp the player can have is 100.
+###### StarDestroyer:
 
-**Factory\*\***:\*\* We decided to implement the Factory pattern here, this class handles the spawning process of all the objects with static methods, this way, we can handle all the spawning processes from a single place. Also, in some cases, for example while spawning enemies, we have a complicated process, we might create two different ships based on some logic, or might create multiple projectiles instead of a single one, from different parts of the ship, having this logic inside constructors would be confusing.
+    A stronger enemy, that has a wide body (3 tiefighters), three guns, high attack rate and huge hitpoints.
+
+##### PlayerShip:
+
+     This class simply represents the player’s ship. It also overrides the draw method because in a special case, when the player has an active shield, we need to call super.draw and also, draw the shield.
+
+#### Projectile:
+
+     This class is another child of the Object class, Represents the projectiles in game both created by player and enemy, simply having the owner in an attribute to be able to make decisions when that info is needed.
+
+#### Boost:
+
+     This is another child of the Object class, we also may inherit from the projectile itself since it acts similarly, but Projectiles don’t have image and we want to keep it that way, at least for now. When the player collides with a boost, it gets consumed and removed.
+
+##### DamageBoost:
+
+     When consumed, Damage of the player increases.
+
+##### DoubleGuns:
+
+     When consumed, player start firing two guns instead of one, after its first consumption, it will not be spawned again.
+
+##### Shield:
+
+     When consumed, player gains a shield that will block 5 enemy projectiles
+
+##### HP_Boost:
+
+     When consumed, player gains 50 hitpoints, maximum hp the player can have is 100.
+
+##### Factory:
+
+    We decided to implement the Factory pattern here, this class handles the spawning process of all the objects with static methods, this way, we can handle all the spawning processes from a single place. Also, in some cases, for example while spawning enemies, we have a complicated process, we might create two different ships based on some logic, or might create multiple projectiles instead of a single one, from different parts of the ship, having this logic inside constructors would be confusing.
 
 ## Use-Case Diagram <a name="use_case_diagram"></a>
 
