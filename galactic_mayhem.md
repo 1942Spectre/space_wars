@@ -34,7 +34,7 @@ Diagram 7
 
 Explanation 7
 
-**1.**            **Introduction** **and** **Description\*\***: “Galactic Mayhem”\*\*
+**1.** **Introduction** **and** **Description\*\***: “Galactic Mayhem”\*\*
 
 Step into the retro world of Galactic Mayhem, a classic space-shooter game with a nostalgic twist. Inspired by the arcade era and the enduring popularity of Star Wars, this indie gem offers a blast from the past while capturing the essence of timeless gameplay. In a gaming landscape where simplicity reigns supreme, Galactic Mayhem invites players to rediscover the joy of pixelated adventures and embark on an epic journey through the stars. Get ready to pilot your ship, dodge enemy fire, and experience the thrill of old-school gaming with Galactic Mayhem.
 
@@ -50,9 +50,10 @@ The scoreboard feature that saves the best 10 scores will fuel players' competit
 
 **UML Diagram:**
 
-<div style = "background-color: #f0f0f0; display: inline-block; padding:5px;>
-![UML Diagram](files/UML%20Diagram.png "UML Diagram")
+<div style="background-color: #f0f0f0; display: inline-block; padding: 5px;">
+    <img src="files/UML%20Diagram.png" alt="UML Diagram">
 </div>
+
 **Explanation\*\***:\*\*
 
 **Game:** This class handles the whole game loop, it updates all the sprites, checks collisions, adjust difficulty etc.
