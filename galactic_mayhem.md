@@ -50,9 +50,7 @@ The scoreboard feature that saves the best 10 scores will fuel players' competit
 
 **UML Diagram:**
 
-<div style="background-color: #f0f0f0; display: inline-block; padding: 5px;">
-    <img src="files/UML%20Diagram.png" alt="UML Diagram">
-</div>
+![UML Diagram](files/UML%20Diagram.png "UML Diagram")
 
 **Explanation\*\***:\*\*
 
